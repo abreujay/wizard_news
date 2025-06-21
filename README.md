@@ -26,7 +26,7 @@ Projeto simples em Node.js com Express para buscar as principais notícias do di
 
 ## Como usar
 
-1. Clone o repositório:
+1. Clone o repositório:  
    ```bash
    git clone https://github.com/abreujay/wizard_news.git
 Instale as dependências:
