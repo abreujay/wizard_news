@@ -29,44 +29,46 @@ Projeto simples em Node.js com Express para buscar as principais notícias do di
 1. Clone o repositório:  
    ```bash
    git clone https://github.com/abreujay/wizard_news.git
-Instale as dependências:
+   ```
+2. Instale as dependências:  
+   ```bash
+   npm install
+   ```
+3. Configure as variáveis de ambiente no arquivo `.env`:  
+   ```env
+   RESENDAPIKEY=seu_token_aqui
+   ```
+4. Execute o servidor:  
+   ```bash
+   npm run dev
+   ```
+5. Faça uma requisição POST para:  
+   ```
+   POST /api/send-email
+   ```
+   com o corpo JSON:  
+   ```json
+   {
+     "to": "email@exemplo.com"
+   }
+   ```
 
-bash
-Copiar
-Editar
-npm install
-Configure as variáveis de ambiente no arquivo .env:
+---
 
-env
-Copiar
-Editar
-RESENDAPIKEY=seu_token_aqui
-Execute o servidor:
+## Considerações
 
-bash
-Copiar
-Editar
-npm run dev
-Faça uma requisição POST para:
+- O domínio do remetente padrão é `onboarding@resend.dev`.  
+- Para usar seu domínio personalizado, configure no painel da Resend e ajuste os registros DNS.  
+- Ideal para aprendizado e projetos pequenos.
 
-bash
-Copiar
-Editar
-POST /api/send-email
-com o corpo JSON:
+---
 
-json
-Copiar
-Editar
-{
-  "to": "email@exemplo.com"
-}
-Considerações
-O domínio do remetente padrão é onboarding@resend.dev.
+## Contato
 
-Para usar seu domínio personalizado, configure no painel da Resend e ajuste os registros DNS.
+Desenvolvido por [Jonathan Abreu](https://github.com/abreujay).
 
-Ideal para aprendizado e projetos pequenos.
+---
 
-Contato
-Desenvolvido por Jonathan Abreu.
+## Licença
+
+MIT License
