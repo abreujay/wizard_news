@@ -13,6 +13,6 @@ router.post('/send-email', (req: Request, res: Response): void => {
         res.status(400).json({ error: "O campo é obrigatório..." })
     }
 })
-router.get('/keep-alive', (req: Request, res: Response): void => {
+router.head('/keep-alive', (req: Request, res: Response): void => {
     res.send('Ok!')
 })
